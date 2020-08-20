@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 ClockDetails.ang=0;
+                ClockDetails.angMin=0;
                 playBt.setClickable(true);
                 h.removeCallbacks(r);
             }
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 ClockDetails.angMin+=0.1;
 //                Log.i("Main", "Angle : "+ClockDetails.ang);
 //                Log.i("Main", "Angle : "+ClockDetails.ang);
-                h.postDelayed(r,1000);
+                h.postDelayed(r,100);
             }
         };
     }
